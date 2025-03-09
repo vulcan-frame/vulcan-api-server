@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package server.player.admin.recharge.v1;
+package player.admin.recharge.v1;
 
 import "google/api/annotations.proto";
 
@@ -9,7 +9,7 @@ option go_package = "api/server/player/admin/recharge/v1;adminv1";
 // Recharge admin service
 // Open to the server cluster
 // Provide HTTP and gRPC interfaces
-service RechargeAdmin {
+service RechargeAdminService {
 	// Query order list by page
 	rpc GetOrderList (GetOrderListRequest) returns (GetOrderListResponse) {
 		option (google.api.http) = {
